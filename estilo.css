@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #87CEEB, #00A9E0);
+    z-index: 1000;
+}
+
+.header__title {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header__subtitle {
+    font-size: 1.2rem;
+    color: #e0f7fa;
+}
+
+.header__button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #00A9E0;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.header__button:hover {
+    background-color: #e0f7fa;
+}
+
+.section--food {
+    margin-top: 2rem;
+}
+
+.section__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.section__description {
+    font-size: 1rem;
+    color: #666;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table__row, .table__header {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.table__header {
+    font-weight: bold;
+    background: #f4f4f4;
+    text-align: left;
+}
+
+.table__image {
+    width: 100px;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.section--nature {
+    margin-top: 2rem;
+}
+
+.section__media {
+    display: flex;
+    gap: 1rem;
+}
+
+.section__image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.section__image--zoom:hover {
+    transform: scale(1.05);
+}
+
+.section__video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+}
+
+.section--tourist {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.carousel__item {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.carousel__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.carousel__image:hover {
+    transform: scale(1.1);
+}
+
+.carousel__caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    font-size: 0.9rem;
+}
+
+.section__image + .section__video {
+    margin-left: 1rem;
+}
+
+.header + .main-content {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 2rem;
+    }
+
+    .header__subtitle {
+        font-size: 1rem;
+    }
+
+    .header__button {
+        font-size: 0.9rem;
+    }
+
+    .section__title {
+        font-size: 1.5rem;
+    }
+
+    .section__description {
+        font-size: 0.9rem;
+    }
+
+    .carousel__item {
+        width: 120px;
+    }
+
+    .carousel__caption {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__title {
+        font-size: 1.8rem;
+    }
+
+    .header__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .header__button {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .section__title {
+        font-size: 1.2rem;
+    }
+
+    .section__description {
+        font-size: 0.8rem;
+    }
+
+    .carousel__item {
+        width: 100px;
+    }
+
+    .carousel__caption {
+        font-size: 0.7rem;
+    }
+}
